@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://hatchling13.github.io/sitemap.xml
