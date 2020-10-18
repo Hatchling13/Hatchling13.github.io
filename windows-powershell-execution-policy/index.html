@@ -54,7 +54,7 @@
   <h1 class="post-title">Windows CUI 수난시대</h1>
   <span class="post-date">2020-08-13</span>
   <h2 id="ssedu">서두</h2>
-<p>CLI, 명령 줄 인터페이스는 일반적으로 GUI, 그래픽 사용자 인터페이스보다 사용하기 어렵다고 여겨진다. 애초에 해커(전통적인 의미)들의 전용 장난감로 인식되던 컴퓨터가 GUI를 만나면서 대중적으로 쓸모를 얻게 되었다는 사실은 모두가 인정할 것이다. 하지만 2020년 현재에도 CUI가 완전히 사라지지는 않았다. 아니, 오히려 어떤 프로그램들은 CUI 환경을 우선적으로 지원할 정도다. 문제는 이러한 프로그램들은 대부분의 경우, 유닉스 계열의 CUI에 최적화되어있다는 점이다. <strong>사실상 표준</strong>인 <code>bash</code>를 중심 환경으로 지원하다 보니, 다른 환경에는 상대적으로 신경을 쓰지 못하는 모양이다.</p>
+<p>CUI, 명령 줄 인터페이스는 일반적으로 GUI, 그래픽 사용자 인터페이스보다 사용하기 어렵다고 여겨진다. 애초에 해커(전통적인 의미)들의 전용 장난감로 인식되던 컴퓨터가 GUI를 만나면서 대중적으로 쓸모를 얻게 되었다는 사실은 모두가 인정할 것이다. 하지만 2020년 현재에도 CUI가 완전히 사라지지는 않았다. 아니, 오히려 어떤 프로그램들은 CUI 환경을 우선적으로 지원할 정도다. 문제는 이러한 프로그램들은 대부분의 경우, 유닉스 계열의 CUI에 최적화되어있다는 점이다. <strong>사실상 표준</strong>인 <code>bash</code>를 중심 환경으로 지원하다 보니, 다른 환경에는 상대적으로 신경을 쓰지 못하는 모양이다.</p>
 <h2 id="ggayo">개요</h2>
 <p>며칠 전부터 <code>Django</code>에 관심이 생겨서 <code>Python</code>을 열심히 설치하고 <a href="https://docs.djangoproject.com/en/3.1/topics/install/#installing-an-official-release-with-pip">튜토리얼</a>을 봤더랜다. 그런데 평소에는 신경쓰지 않던 것이 눈에 들어오더라. <code>venv</code>가 그 주인공이다. <code>Python 3.3</code> 이상에서부터 새로 추가된 기능인데, 이전의 <a href="https://virtualenv.pypa.io/en/latest/">virtualenv</a> 의 기능 몇 가지를 표준으로 끌고 들어간 녀석이다. 간단히 설명하자면 이름 그대로 가상환경을 만들어주는 툴인데,  <code>pip</code> 등으로 끌어온 패키지들을 전역 환경에는 설치하고 싶지 않을 때라던가, 하위 호환성을 위해서라던가... 그런 경우에 사용한다고 알려져있다. 아무튼 얘가 문제가 되는 게 뭐냐면, 바로 <code>Windows PowerShell</code>에서 사용할 때다.</p>
 <p><img src="https://hatchling13.github.io/windows-powershell-execution-policy/exec-policy-error.png" alt="venv activate error" /></p>
